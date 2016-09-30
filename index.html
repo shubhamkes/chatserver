@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font: 16px Helvetica, Arial; width: 80%; margin: auto; }
+            form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 80%; margin-bottom: 2%;}
+            form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+            form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+            #messages { list-style-type: none; margin: 0; padding: 0; }
+            #messages li { padding: 5px 10px; }
+            #messages li:nth-child(odd) { background: #eee; }
+            .title{
+                margin:auto;
+                font-size: 20px;
+                padding: 20px 35%;
+                font-weight : bold;
+            }
+            .chat-box{ height : 400px; overflow-y: scroll;}
+        </style>
+        <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="/client.js"></script>
+    </head>
+    
+    
+    <body>
+        <div class="title">
+            <div class>Shubham Chat service</div>
+        </div>
+        <div class="chat-box"> <ul id="messages"></ul> </div>
+         <form action="">
+            <input type="text" id="m" autocomplete="off" /><button>Send</button>
+        </form>
+        <!--<script>
+            var socket = io();
+            $('form').submit(function(){
+                socket.emit('chatMessage', $('#m').val());
+                $('#m').val('');
+                return false;
+            });
+            socket.on('chatMessage', function(msg){
+                console.log(msg);
+                $('#messages').append($('<li>').text(msg));
+            });
+        </script>-->
+            
+    </body>
+</html>

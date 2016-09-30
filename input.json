@@ -1,0 +1,12 @@
+[
+		{
+			"id" : 1,
+			"name" : "Masterdo",
+			"color" : "linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)"
+		},
+		{
+			"id" : 2,
+			"name" : "Hudda",
+			"color" : "linear-gradient(135deg, rgba(255,174,39,1) 0%,rgba(222,73,109,1) 100%)"
+		}
+	]
